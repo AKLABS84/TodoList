@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <header>
+      <h1>Todo List</h1>
+      <div class="date-display">2022. 10. 03</div>
+    </header>
+    <div class="icons">
+      <button class="icon-button delete" id="delete-button">
+        <span>🗑️</span>
+      </button>
+      <button class="icon-button edit" id="edit-button">
+        <span>✏️</span>
+      </button>
+    </div>
+    <div class="todo-app">
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="할 일을 입력하세요..." required>
+        <button type="submit">추가</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

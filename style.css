@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefcf4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .todo-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    position: relative;
+    text-align: center;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .date-display {
+    font-size: 16px;
+    color: #666;
+    background: #eae7ff;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .icon-button {
+    background-color: #fde7cc;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .icon-button.edit {
+    background-color: #fbe8f9;
+  }
+  
+  .icon-button:hover {
+    opacity: 0.8;
+  }
+  
+  .todo-app {
+    border: 2px solid #e0e6ff;
+    border-radius: 15px;
+    padding: 15px;
+  }
+  
+  #todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 입력창과 버튼 사이의 마진 추가 */
+    margin-bottom: 20px;
+    visibility: hidden; /* 초기 상태에서 숨김 */
+  }
+  
+  #todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  #todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .todo-item button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .todo-item button:hover {
+    background-color: #c9302c;
+  }
+  
